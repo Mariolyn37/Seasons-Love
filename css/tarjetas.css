@@ -1,0 +1,172 @@
+
+
+.wrap{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.tarjeta-wrap{
+	margin: 10px;
+	-webkit-perspective: 800;
+	perspective: 800;
+}
+
+.tarjeta{
+	width: 300px;
+	height: 350px;
+	background: #a3a3a3;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.adelante, .atras{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.adelante{
+	width: 100%;
+}
+
+.atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.info-tarjetas {
+	text-align: center;
+	color: #fff;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+
+.tarjeta-wrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card1{
+	background-image: url(../img/Usuarios/Nana.jpeg);
+	background-size: cover;
+}
+
+.card2{
+	background-image: url(../img/Usuarios/Rubiela.jpeg);
+	background-size: cover;
+}
+
+.card3{
+	background-image: url(../img/Usuarios/Stiven.jpeg);
+	background-size: cover;
+}
+
+@media screen and (max-width: 1240px) { 
+	.tarjeta{
+		width: 250px;
+		height: 250px;
+	}
+	}
+@media screen and (max-width: 980px) { 
+	.tarjeta{
+		width: 200px;
+		height: 200px;
+		font-size: 14px;
+	}
+		
+		.nosotros{
+			margin-right: 2rem;
+
+		}
+	}
+@media screen and (max-width: 895px) { 
+		.info-section{
+			width: 100%;
+		}
+
+		.nosotros{
+			display: none;
+		}
+
+		.nosotros_oculto{
+			display: block;
+		}
+
+		.portada{
+			display: none;        
+		}
+
+		.tarjeta{
+			width: 150px;
+			height: 150px;
+			font-size: 14px;
+		}
+
+		.portada_oculto {
+			background-image: url("../img/Comic.jpg");
+			background-size: contain;
+			margin: auto;
+			height: 350px;
+			width: 250px;
+			cursor: pointer;
+			transition: all 300ms ease;
+		}
+		
+		.portada_oculto:hover {
+			transform: scale(1.1);
+		}
+		iframe{
+			width: 510px;
+		}
+	}  
+	
+	@media screen and (max-width: 655px) { 
+		.wrap{
+			display: none;
+		}
+
+		.wrap_oculto{
+			display: block;
+		}
+
+		.tarjeta{
+			width: 250px;
+			height: 250px;
+			margin-bottom: 50px;
+			margin: auto;
+		}
+
+		iframe{
+			width: 370px;
+		}
+}

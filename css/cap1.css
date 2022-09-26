@@ -1,0 +1,589 @@
+
+
+  body{
+  justify-content: center;
+  margin: auto;
+  align-content: center;
+  background-color: rgb(255, 255, 255);
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.flex-conteiner {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-nav-container {
+  background-color: #b32529;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.button {
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+  left: 80%;
+  background: #b32529;
+  color: #ececec;
+  padding: 13px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: none;
+  transition: all 500ms ease;
+}
+
+
+
+.button:hover {
+  color: white;
+  background: rgb(138, 0, 0);
+  cursor: pointer;
+}
+
+.caja1 {
+  width: 500px;
+  height: 640px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cielo {
+  width: 500px;
+  height: 640px;
+}
+
+.sol {
+  top: 130px;
+  position: absolute;
+}
+
+.sol_animation {
+  top: 50px;
+  transition: all 500ms ease;
+}
+
+.parpadeo{
+  animation-duration: 3s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes move {
+  0%, 40%, 80%  {
+    opacity: 1;
+    }
+   20%, 60%, 100% {
+    opacity: 0;
+    }
+  
+}
+
+@keyframes scale {
+  0%, 40%, 80%  {
+    transform: scale(1.1);
+    }
+   20%, 60%, 100% {
+    transform: scale(1);
+    }
+  
+}
+
+.montanas_animation {
+  margin-top: -260px;
+  transition: all 500ms ease;
+}
+
+.caja2 {
+  width: 500px;
+  height: 350px;
+}
+.caja3 {
+  margin-top: 19px;
+  width: 500px;
+  height: 250px;
+}
+
+.vineta3 {
+  height: 270px;
+  width: 500px;
+  cursor: pointer;
+}
+
+.montanas {
+  margin-top: -100px;
+  position: relative;
+  width: 600px;
+  margin-left: -50px;
+  animation-duration: 3s;
+  animation-name: scale;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+ 
+}
+
+.montanas_animation {
+  margin-top: -260px;
+  transition: all 500ms ease;
+  transform: scale(1.1);
+}
+
+.sombra{
+  transition: all 500ms ease;
+  animation-duration: 3s;
+  animation-name: moves;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes moves {
+  
+  0%, 40%, 80%  {
+    box-shadow: 1px 1px 30px 1px rgb(255, 138, 48);
+   
+    }
+   20%, 60%, 100% {
+    box-shadow: 5px 10px 20px 1px rgba(255, 194, 147, 0);
+    
+    }
+  
+}
+
+.vineta4 {
+  width: 430px;
+  height: 320px;
+  cursor: pointer;
+}
+
+.caja-padre2 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.caja4 {
+  width: 430px;
+  height: 320px;
+  background-color: #701d20;
+}
+
+.caja5 {
+  width: 430px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.vineta5_fondo {
+  width: 430px;
+  height: 320px;
+  position: relative;
+}
+
+.hades {
+  margin-top: -290px;
+  width: 380px;
+  position: absolute;
+  margin-left: 10px;
+  transition: all 500ms ease;
+  cursor: pointer;
+  
+}
+
+.hades_animation {
+  transition: all 500ms ease;
+  margin-top: -320px;
+  width: 400px;
+  position: absolute;
+}
+
+.roca {
+  margin-top: -400px;
+  width: 200px;
+  height: 170px;
+  position: relative;
+  cursor: pointer;
+}
+
+.caja6 {
+  width: 300px;
+  height: 300px;
+}
+.vineta6 {
+  margin-top: 7px;
+  position: absolute;
+  width: 1000px;
+  margin-left: -101px;
+  cursor: pointer;
+}
+.caja-padre3 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  margin-top: 60px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.caja7 {
+  width: 800px;
+  height: 600px;
+}
+
+.vineta7 {
+  margin-top: 104px;
+  position: absolute;
+  width: 350px;
+  margin-left: -300px;
+  cursor: pointer;
+}
+
+.caja-padre4 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  width: 1100px;
+  margin: 0 auto;
+}
+.caja8 {
+  width: 500px;
+  height: 300px;
+  background-color: #0bf0e5;
+}
+.cielo1 {
+  width: 500px;
+  height: 300px;
+}
+
+.montanas1 {
+  margin-top: 46px;
+  position: absolute;
+  width: 500px;
+  margin-left: -500px;
+}
+.arboles1 {
+  margin-top: 24px;
+  position: absolute;
+  width: 495px;
+  margin-left: -498px;
+}
+.arbusto1 {
+  margin-top: 190px;
+  position: absolute;
+  width: 272px;
+  margin-left: -379px;
+}
+.arbusto2 {
+  margin-top: 215px;
+  position: absolute;
+  width: 239px;
+  margin-left: -470px;
+}
+.hades2 {
+  width: 310px;
+  position: absolute;
+  margin-left: -417px;
+  margin-top: 50px;
+}
+
+.hades2_animation {
+  width: 380px;
+  position: absolute;
+  margin-left: -417px;
+  margin-top: 0px;
+  transition: all 1000ms;
+}
+
+.roquita {
+  margin-top: 165px;
+  position: absolute;
+  width: 133px;
+  margin-left: -418px;
+}
+
+.caja9 {
+  width: 400px;
+  height: 300px;
+  background-color: #2277da;
+}
+
+.vineta4_1 {
+  width: 400px;
+  height: 300px;
+}
+.caja-padre5 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  margin-top: 60px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.caja10 {
+  width: 950px;
+  height: 600px;
+}
+
+.vineta9 {
+  margin-top: 7px;
+  width: 1000px;
+  margin-left: -20px;
+  cursor: pointer;
+}
+.caja-padre6 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  margin-top: 60px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.caja11 {
+  width: 800px;
+  height: 600px;
+}
+
+.vineta11 {
+  margin-top: 7px;
+  position: absolute;
+  width: 1000px;
+  margin-left: -90px;
+  cursor: pointer;
+}
+
+.caja-padre7 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.caja12 {
+  width: 490px;
+  height: 320px;
+  background-color: black;
+  margin-left: 20px;
+}
+
+.vineta12 {
+  width: 490px;
+  height: 320px;
+  opacity: 0%;
+  transition: all 900ms;
+  cursor: pointer;
+  
+}
+
+.caja13 {
+  width: 430px;
+  height: 320px;
+
+}
+.vineta13 {
+  width: 430px;
+  height: 320px;
+  cursor: pointer;
+}
+.caja-padre8 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.caja14 {
+  width: 430px;
+  height: 320px;
+  background-color: #701d20;
+}
+.vineta14 {
+  width: 430px;
+  height: 320px;
+  cursor: pointer;
+}
+
+.caja15 {
+  width: 430px;
+  height: 320px;
+  overflow: hidden;
+}
+.caja-padre9 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  margin-top: 60px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.caja16 {
+  width: 800px;
+  height: 600px;
+}
+
+
+.caja-padre10 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.caja17 {
+  width: 430px;
+  height: 320px;
+}
+.v13 {
+  width: 490px;
+  height: 320px;
+  cursor: pointer;
+}
+.caja18 {
+  width: 430px;
+  height: 320px;
+  
+}
+.vineta14 {
+  width: 430px;
+  height: 320px;
+  cursor: pointer;
+}
+.caja-padre11 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  margin-top: 60px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.caja19 {
+  width: 800px;
+  height: 600px;
+}
+
+.vineta15 {
+  margin-top: 7px;
+  position: absolute;
+  width: 989px;
+  height: 570px;
+  margin-left: -93px;
+  cursor: pointer;
+}
+.caja-padre12 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.caja20 {
+  width: 413px;
+  height: 320px;
+}
+.vineta20 {
+  width: 486px;
+  height: 320px;
+  cursor: pointer;
+}
+.caja21 {
+  width: 453px;
+  height: 320px;
+  overflow: hidden;
+}
+.vineta21 {
+  width: 500px;
+  height: 320px;
+}
+.caja-padre13 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.caja22 {
+  width: 490px;
+  height: 320px;
+}
+.vineta22 {
+  width: 486px;
+  height: 320px;
+  cursor: pointer;
+}
+.caja23 {
+  width: 450px;
+  height: 320px;
+  overflow: hidden;
+}
+.vineta23 {
+  width: 486px;
+  height: 320px;
+}
+.caja-padre14 {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  margin-top: 60px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.caja24 {
+  width: 800px;
+  height: 600px;
+}
+
+.vineta24 {
+  margin-top: 7px;
+  position: absolute;
+  width: 980px;
+  margin-left: -90px;
+  cursor: pointer;
+}
+
+#button-up {
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 300ms ease;
+  z-index: 1;
+}
+
+#button-up:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  background: rgb(48 41 23);
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  margin-top: 800px;
+}
+
+.info-footer {
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  margin-bottom: 0%;
+}
